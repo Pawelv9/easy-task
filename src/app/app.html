@@ -9,14 +9,13 @@
           (select)="onSelectUser($event)"
         />
       </li>
-<!--      <li>-->
-<!--        <app-user />-->
-<!--      </li>-->
-<!--      <li>-->
-<!--        <app-user />-->
-<!--      </li>-->
-<!--      <li>-->
-<!--        <app-user />-->
-<!--      </li>-->
+      <li>
+        <app-user
+          [id]="users[1].id"
+          [name]="users[1].name"
+          (select)="onSelectUser($event)"
+        />
+      </li>
     </ul>
+  <app-tasks [name]='selectedUser.name'/>
 </main>
