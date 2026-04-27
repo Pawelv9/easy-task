@@ -21,8 +21,6 @@ export class Tasks {
     return this.tasksService.getUserTasks(this.userId)
   }
 
-  onCompleteTask(id: string) {}
-
   onStartAddTask() {
     this.isAddingTask = true
   }
@@ -30,5 +28,4 @@ export class Tasks {
   onCloseAddTask () {
     this.isAddingTask = false
   }
-
 }
